@@ -2,8 +2,6 @@
 <html>
 
 <head>
-
-
   <base href="/devfolio/">
 
   <meta charset="UTF-8">
@@ -24,11 +22,10 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = "1053439443";
+    const serviceWorkerVersion = "1029651023";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
-
 
   <style>
     .lds-ripple {
@@ -84,16 +81,21 @@
   </style>
 
 
-
 </head>
 
-<body style="overflow: hidden">
+<body>
 
-<!--   <div id="loading_indicator" class="container">
-    <img class="indicator" src="./loading.gif" />
-  </div> -->
+  
+  <div class="container">
+    <div class="center">
+      <div class="lds-ripple">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
 
-
+  
   <script>
     window.addEventListener('load', function (ev) {
       // Download main.dart.js
@@ -109,17 +111,6 @@
       });
     });
   </script>
-
-  
-<!--   window.onload = function () {
-  setTimeout(function () {
-  var loadingIndicator = document.getElementById("loading_indicator");
-  if (loadingIndicator) {
-  loadingIndicator.remove();
-  }
-  }, 10000);
-  }; -->
-  
 </body>
 
 </html>
